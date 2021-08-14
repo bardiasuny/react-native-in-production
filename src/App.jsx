@@ -23,9 +23,9 @@ function App() {
   }
 
   return (
-    <div >
-      <header className="App-header">
-        <Box mt='2vh'  style={styles.test} vCenter justifyContent="space-between"  height='97vh' width='100vw'>
+        <Box 
+          backgroundColor="#0b0c11"
+          pt='2vh'  style={styles.test} vCenter justifyContent="space-between"  height='98vh' width='100vw'>
            <Box center>
               <img src={textLogo} style={styles.textLogo} alt="banner" />
               <Box mt={2} fontSize={12}>video tutorials about React Native</Box>
@@ -46,20 +46,20 @@ function App() {
            </Box>
            <Box 
            pt={5}
+           pb={20}
            style={styles.footerWrapper}
            row center justifyContent="space-around" width="90vw">
-                <Box  fontSize={12}>©2021 React Native in Production UK. All rights reserved.</Box>
+                <Box fontSize={11}>©2021 React Native in Production UK. All rights reserved.</Box>
                 <img src={sponsors} style={styles.sponsorsLogo} alt="banner" />
             </Box>
         </Box>
-      </header>
-    </div>
   );
 }
 
 const styles = {
   test:{
-      minHeight: 400
+      minHeight: 400,
+      color: 'white'
   }, 
   title:{
     fontSize: '10px',
@@ -78,7 +78,7 @@ const styles = {
   },
   footerWrapper:{
      borderTopWidth: '1px',
-     borderTopColor: 'grey',
+     borderTopColor: '#3c3c3c',
      borderTopStyle: 'solid'
   }
 }
